@@ -18,13 +18,14 @@ namespace TeltIt.BSG.Scrapper.Spiders
             HashSet<string> urls = new HashSet<string>();
             for (int i = 1; i <= 1; i++)
             {
-                urls.Concat(SitemapReader.ReadFromLoc(String.Format("https://czytam.pl/sitemap/mapa{0}.xml", i)));
+                //urls.UnionWith(SitemapReader.ReadFromLoc(String.Format("https://czytam.pl/sitemap/mapa{0}.xml", i)));
             }
 
             // Parse each page find in the sitemap
             //foreach (string pageUrl in urls)
             //    this.Request(pageUrl, Parse);
-            this.Request(urls.Take(1), Parse);
+            this.Request("https://czytam.pl/k,ks_777344,Porozmawiajmy-jak-dorosli-Warufakis-Janis.html", Parse);
+            this.Request("https://czytam.pl/k,ks_619022,Post-Daniela-Dajka-Krystyna-Piorkowski-Lukasz.html", Parse);
         }
 
         public override void Parse(Response response)

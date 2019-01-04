@@ -18,6 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\SitemapTools\TurnerSoftware.SitemapTools\TurnerSoftware.SitemapTools.csproj" />
+    <ProjectReference Include="..\DataModel\DataModel.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

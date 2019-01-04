@@ -17,7 +17,7 @@ namespace TeltIt.BSG.Scrapper.Readers
             // Read the sitemap and store unique urls in the HashSet
             HashSet<string> urls = new HashSet<string>();
             foreach (var url in sitemap.Urls)
-                urls.Add(url.Location.AbsolutePath);
+                urls.Add(url.Location.AbsoluteUri);
 
             return urls;
         }
