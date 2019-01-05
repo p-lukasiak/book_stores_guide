@@ -22,9 +22,6 @@ namespace TeltIt.BSG.DataModel
             Url = url;
         }
 
-        public static List<Site> Sites = new List<Site>()
-        {
-            new Site(SiteInstance.CZYTAM, "czytam.pl", "https://czytam.pl")
-        };
+        
     }
 }

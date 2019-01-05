@@ -6,6 +6,11 @@ namespace TeltIt.BSG.DataModel
 {
     public class Author
     {
-        public string Name { get; set; }
+        public string FullName { get; set; }
+
+        public Author(string fullName)
+        {
+            FullName = fullName;
+        }
     }
 }
